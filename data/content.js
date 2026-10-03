@@ -8,7 +8,9 @@
 window.SITE_CONTENT = {
   profile: {
     name: "Jerry Zhao",
-    title: "Software Developer · BCIT Computer Systems Technology",
+    title: "Software Developer",
+    // Big gradient line under your name in the hero.
+    tagline: "From cancer research to code. Building clean, responsive web experiences.",
     location: "Vancouver, BC",
     // Path or URL to a headshot (e.g. "assets/headshot.jpg"). Leave empty to show initials.
     photo: "",
@@ -23,6 +25,13 @@ window.SITE_CONTENT = {
       { label: "GitHub", value: "ZihengZhaoJerry", url: "https://github.com/ZihengZhaoJerry" },
       { label: "LinkedIn", value: "ziheng-zhao", url: "https://www.linkedin.com/in/ziheng-zhao" },
     ],
+    // Big numbers shown in the About section.
+    highlights: [
+      { value: "24h", label: "to ship a working MVP at StormHacks 2025" },
+      { value: "98%", label: "accuracy validating cancer biomarkers at UBC" },
+      { value: "2", label: "team projects led as Project Lead" },
+    ],
+    contactHeadline: "Let's build something together.",
     // Optional: link to a downloadable PDF resume (e.g. "assets/resume.pdf").
     resumePdf: "",
   },
@@ -84,6 +93,7 @@ window.SITE_CONTENT = {
         "and queue management. Delivered the MVP in 24 hours using agile practices and Git. " +
         "Proposed an AI integration that matches song beats with phone light effects.",
       tags: ["React", "Tailwind CSS", "Hackathon"],
+      emoji: "♫", // big glyph on the card artwork (optional; or set `image`)
       links: [{ label: "Code", url: "https://github.com/ZihengZhaoJerry/StormHeck2025" }],
       featured: true,
     },
@@ -95,6 +105,7 @@ window.SITE_CONTENT = {
         "Designed the site in Figma and deployed it with Framer, ensuring cross-device compatibility. " +
         "Built interactive UI components for a better visitor experience.",
       tags: ["Framer", "Figma", "JavaScript", "Design"],
+      emoji: "✦",
       links: [],
       featured: true,
     },
@@ -107,6 +118,7 @@ window.SITE_CONTENT = {
         "Implemented a responsive UI, real-time chat, slang games, and Firebase authentication. " +
         "Users can post, edit and search slang entries, comment on others' posts, and get real-time notifications.",
       tags: ["Node.js", "MongoDB", "Firebase", "JavaScript"],
+      emoji: "Huh?!",
       links: [{ label: "Code", url: "https://github.com/ZihengZhaoJerry/1800_202510_BBY17" }],
     },
   ],

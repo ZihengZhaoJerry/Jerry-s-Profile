@@ -16,11 +16,11 @@ assets/           Put your headshot, project screenshots, PDF resume here
 
 Open `data/content.js` and replace the placeholder values:
 
-- **profile**: name, title, location, photo, summary, contact links, optional PDF resume
+- **profile**: name, title, `tagline` (the gradient line under your name), location, photo, summary, `highlights` (big numbers in About), contact links, `contactHeadline`, optional PDF resume
 - **resume**: `experience`, `education`, `skills`, `awards`
-- **projects**: each has `name`, `year`, `summary`, `description` (expandable), `tags`, optional `image`, `links`, and `featured`
+- **projects**: each has `name`, `year`, `summary`, `description` (shown in the detail popup), `tags`, `links`, `featured`, and card artwork: an `image`, or a gradient with an `emoji`/short glyph (override the gradient with `color`)
 
-If you leave a field out or leave it empty, its UI is hidden. Featured projects are sorted first. When at least two tags exist, tag filter buttons are generated automatically.
+If you leave a field out or leave it empty, its UI is hidden. Featured projects are sorted first. When there's an odd number of projects, the first one becomes a full-width tile. When at least two tags exist, tag filter buttons are generated automatically.
 
 ## Running locally
 
@@ -32,9 +32,11 @@ python3 -m http.server 8000   # then visit http://localhost:8000
 
 ## Features
 
-- Profile header with a photo, or initials if there's no photo
-- Resume with experience, education, skills, and awards
-- Project cards with tag filtering, expandable details, and links
+- Clean, Apple-inspired design: big type, generous spacing, frosted-glass nav, fade-in on scroll
+- Hero with a photo or gradient initials, a tagline, and call-to-action buttons
+- About statement with highlight numbers, an experience timeline, education cards
+- Project tiles with tag filtering; click one to open a detail popup with links
+- Skills cards and a contact section
 - Light/dark mode that follows the system setting and has a manual toggle, which is remembered
 - Mobile-friendly layout
 - Print stylesheet (Cmd/Ctrl+P gives a clean resume)
